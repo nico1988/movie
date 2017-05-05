@@ -1,7 +1,7 @@
 (function(angular) {
     // "use strict";
     // start your ride
-    //1. 创建模块
+    //1. 创建主模块模块
     //2. 依赖了首页模块
 
 
