@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电影天空</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body ng-app="moviecat">
+    <!--顶部开始-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <a class="col-xs-6">电影天空</a>
+                <div class="header_search col-xs-6">
+                    <div class="search">
+                        <input class="my-input" type="text" placeholder="电影搜索">
+                        <button>搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--顶部结束-->
+
+    <!--angular模板渲染区域-->
+    <div ng-view></div>
+
+    <!-- 底部导航栏开始 -->
+    <div class="container">
+        <div class="row">
+            <nav class="tab">
+                <ul>
+                    <!--li中添加 active 类样式，显示焦点状态。-->
+                    <li class="col-xs-3" class="active"><a href="#!/home_page">首页</a></li>
+                    <li class="col-xs-3"><a href="#!/in_theaters">正在热映</a></li>
+                    <li class="col-xs-3"><a href="#!/coming_soon">即将上映</a></li>
+                    <li class="col-xs-3"><a href="#!/top250">Top250</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="assets/js/prefixfree.min.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="home_page/module.js"></script>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>

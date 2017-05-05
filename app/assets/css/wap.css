@@ -1,0 +1,32 @@
+/*底部tab栏*/
+
+nav {
+    width: 100%;
+}
+
+.tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+nav.tab li {
+    background: #ccc;
+}
+
+nav.tab li a {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+
+/*首页图片设置*/
+
+.list img.home_img {
+    width: 100%;
+    height: 100%;
+}
