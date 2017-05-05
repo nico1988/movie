@@ -13,4 +13,7 @@
 
     // }
     var app = angular.module('moviecat', ['moviecat.home_page']);
+    app.config(["$routeProvider", function($routeProvider) {
+        // $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
+    }])
 })(angular);
