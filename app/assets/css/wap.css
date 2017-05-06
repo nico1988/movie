@@ -296,3 +296,7 @@ nav.tab li a {
 
 
 /*详情页样式*/
+
+a {
+    text-decoration: none !important;
+}

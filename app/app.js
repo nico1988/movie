@@ -21,7 +21,8 @@
     ]);
     app.config(["$routeProvider", function($routeProvider) {
         //首页默认路由规则，跳转到home_page
-        // $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
+        //如果所有的路由规则都不满足，都会跳转到首页
+        $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
     }])
     app.controller("mainController", function($scope, $location) {
         $scope.query = "";
