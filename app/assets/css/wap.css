@@ -30,3 +30,23 @@ nav.tab li a {
     width: 100%;
     height: 100%;
 }
+
+.list ul li a {
+    display: block;
+    width: 100%;
+}
+
+.list ul li img {
+    width: 80%;
+    width: 320px;
+    height: 420px;
+}
+
+
+/*设置小屏幕电影list居中*/
+
+@media screen and (max-width: 768px) {
+    .list ul li {
+        text-align: center;
+    }
+}
