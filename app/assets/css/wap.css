@@ -70,7 +70,16 @@ nav.tab li a {
 }
 
 
+/*设置总页数*/
+
+.paging {}
+
+
 /*设置小屏幕电影list居中*/
+
+.paging {
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .list ul li {
