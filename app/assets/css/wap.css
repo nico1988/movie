@@ -110,6 +110,10 @@ div[ng-view] .list>ul li {
 }
 
 @media screen and (max-width: 768px) {
+    .list img.home_img {
+        width: 130%;
+        margin-left: -15%;
+    }
     .list ul li {
         text-align: center;
     }
