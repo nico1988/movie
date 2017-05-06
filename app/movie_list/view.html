@@ -12,6 +12,11 @@
             </div>
         </li>
     </ul>
+    <!--loading 动画-->
+    <div class="load2" ng-show="loading">
+        <div class="loader"></div>
+    </div>
+    <!--loading 动画-->
     <div ng-cloak class="paging">
         <label>总共：{{data.total}}条记录,第{{nowPage}}/{{totalPage}}页;</label>
         <!-- 加上disable类样式，表示按钮禁用状态 -->
