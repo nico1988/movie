@@ -12,9 +12,16 @@
     // .bottom .menu{
 
     // }
-    var app = angular.module('moviecat', ['moviecat.myjsonp', 'moviecat.home_page', 'moviecat.movie_list', "moviecat.coming_soon", "moviecat.auto_active"]);
+    var app = angular.module('moviecat', [
+        // 'moviecat.details',
+        'moviecat.myjsonp',
+        'moviecat.home_page',
+        'moviecat.movie_list',
+        "moviecat.auto_active"
+    ]);
     app.config(["$routeProvider", function($routeProvider) {
-        // $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
+        //首页默认路由规则，跳转到home_page
+        $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
     }])
     app.controller("mainController", function($scope, $location) {
         $scope.query = "";
