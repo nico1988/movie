@@ -12,7 +12,7 @@
             </div>
         </li>
     </ul>
-    <div class="paging">
+    <div ng-cloak class="paging">
         <label>总共：{{data.total}}条记录,第{{nowPage}}/{{totalPage}}页;</label>
         <!-- 加上disable类样式，表示按钮禁用状态 -->
         <button class="prev disable " ng-click="goPage(nowPage-1)">上一页</button>

@@ -14,7 +14,7 @@
         '$http',
         '$routeParams',
         '$route',
-        'MyJsonp',
+        'MyJsonp', //service服务依赖
         function($scope, $http, $routeParams, $route, MyJsonp) {
             // $http.get("./in_theaters/in_theaters.json").then(function(res) {
             //     // $scope.data = res.data;

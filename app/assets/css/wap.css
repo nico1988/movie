@@ -2,8 +2,14 @@
 
 header {
     height: 50px;
+    width: 100%;
     padding-top: 10px;
-    background: skyblue
+    background: rgba(135, 206, 235, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: 0px 2px 6px fuchsia;
 }
 
 header a.title {
@@ -67,12 +73,34 @@ nav.tab li a {
 .list ul li img {
     width: 320px;
     height: 420px;
+    box-shadow: -3px -3px 3px silver, 6px 6px 3px silver;
+}
+
+.list ul li img:hover {
+    transition: all .5s;
+    transform: translateY(-6px)
+}
+
+div[ng-view] {
+    margin-top: 60px;
+}
+
+div[ng-view] .list>ul {
+    overflow: hidden;
+    /* 清除浮动影响*/
+}
+
+div[ng-view] .list>ul li {
+    margin-top: 10px;
 }
 
 
 /*设置总页数*/
 
-.paging {}
+.paging {
+    border-top: 1px solid silver;
+    padding: 10px;
+}
 
 
 /*设置小屏幕电影list居中*/
