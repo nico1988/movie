@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./bootstrap.css">
 </head>
 
-<body ng-app="moviecat">
+<body ng-app="moviecat" ng-controller='mainController'>
     <!--顶部开始-->
     <header>
         <div class="container">
@@ -18,8 +18,8 @@
                 <a class="title col-xs-4">电影天空</a>
                 <div class="header_search col-xs-8">
                     <div class="search">
-                        <input class="my-input" type="text" placeholder="电影搜索">
-                        <button>search</button>
+                        <input ng-model="query" class="my-input" type="text" placeholder="电影搜索">
+                        <button ng-click="search()">search</button>
                     </div>
                 </div>
             </div>
@@ -51,12 +51,12 @@
     <script src="assets/js/prefixfree.min.js"></script>
     <script src="./angular.js"></script>
     <script src="./angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="./myjsonp.js"></script>
+    <script src="./service/myjsonp.js"></script>
     <script src="home_page/module.js"></script>
     <script src="./movie_list/module.js"></script>
     <script src="./coming_soon/module.js"></script>
     <script src="./auto-active/autoactive.js"></script>
+    <script src="app.js"></script>
 
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.js"></script>

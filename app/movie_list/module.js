@@ -31,14 +31,14 @@
             $scope.nowPage = ($routeParams.page || "1") - 0; //隐式转换成数字
             $scope.loading = true;
             var start = ($scope.nowPage - 1) * $scope.pageSize; //开始等于现在的页面-1  * 6
-            MyJsonp.jsonp("https://api.douban.com/v2/movie/" + $routeParams.movieType, { start: start, count: $scope.pageSize }, function(data) {
-                $scope.data = data; //暴露数据到全局作用域
-                $scope.totalPage = Math.ceil(data.total / $scope.pageSize);
-                $scope.loading = false; //这里前面要给loading赋值，否则loading一致是false
-                $scope.$apply(); // 强制刷新整个viewmodel，视图发生变化时
+            MyJsonp.jsonp("https://api.douban.com/v2/movie/" + $routeParams.movieType + '?q=' + $routeParams.q, { start: start, count: $scope.pageSize }, function(data) {
+                    $scope.data = data; //暴露数据到全局作用域
+                    $scope.totalPage = Math.ceil(data.total / $scope.pageSize);
+                    $scope.loading = false; //这里前面要给loading赋值，否则loading一致是false
+                    $scope.$apply(); // 强制刷新整个viewmodel，视图发生变化时
 
-            })
-            console.log($routeParams);
+                })
+                // console.log($routeParams);
             $scope.goPage = function(nowPage) {
                 //如果页面大于
                 if (nowPage < 1 || nowPage > $scope.totalPage) {

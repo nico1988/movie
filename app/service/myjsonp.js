@@ -15,7 +15,7 @@
             var callbackName = "jsonp_" + Math.random().toString().substr(2);
             // 这里相当于window.jsonp_xxx = fn(data)
             $window[callbackName] = function(data) {
-                console.log(data);
+                // console.log(data);
                 fn(data);
                 //fafawefa
                 $window.document.body.removeChild(scriptElement);

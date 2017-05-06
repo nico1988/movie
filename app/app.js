@@ -16,4 +16,12 @@
     app.config(["$routeProvider", function($routeProvider) {
         // $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
     }])
+    app.controller("mainController", function($scope, $location) {
+        $scope.query = "";
+        $scope.search = function() {
+            console.log(111);
+            // 这个api和$ele.html() $ele.html('wefewf')类似，如果传参则是获取，否则则是设置
+            $location.url("/search/?q=" + $scope.query)
+        }
+    })
 })(angular);
