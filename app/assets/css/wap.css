@@ -168,6 +168,10 @@ nav.tab li {
     background: #222;
 }
 
+nav.tab li.active {
+    background: #f5fbde;
+}
+
 nav.tab li a {
     display: inline-block;
     height: 50px;
