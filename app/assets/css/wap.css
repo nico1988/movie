@@ -78,3 +78,8 @@ nav.tab li a {
         text-align: center;
     }
 }
+
+div[ng-view] .otherinfo span {
+    margin-right: 4px;
+    background: silver;
+}

@@ -6,8 +6,8 @@
                 <img ng-src="{{item.images.large}}" alt="">
             </a>
             <div class="meta">
-                <h4><span>乾隆秘史</span> <em>9.9分</em></h4>
-                <div class="otherinfo">类型:<span>古装</span></div>
+                <h4><span>{{item.title}}</span> <em>{{item.rating.average}}分</em></h4>
+                <div class="otherinfo">类型:<span ng-repeat="aa in item.genres">{{aa}}</span></div>
             </div>
         </li>
     </ul>
