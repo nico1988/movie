@@ -65,7 +65,6 @@ nav.tab li a {
 }
 
 .list ul li img {
-    width: 80%;
     width: 320px;
     height: 420px;
 }
@@ -76,6 +75,10 @@ nav.tab li a {
 @media screen and (max-width: 768px) {
     .list ul li {
         text-align: center;
+    }
+    .list ul li img {
+        width: 300px;
+        height: 400px;
     }
 }
 
