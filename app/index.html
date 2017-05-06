@@ -36,15 +36,18 @@
             <nav class="tab">
                 <ul>
                     <!--li中添加 active 类样式，显示焦点状态。-->
-                    <li class="col-xs-3" class="active"><a href="#!/home_page">首页</a></li>
-                    <li class="col-xs-3"><a href="#!/in_theaters">正在热映</a></li>
-                    <li class="col-xs-3"><a href="#!/coming_soon">即将上映</a></li>
-                    <li class="col-xs-3"><a href="#!/top250">Top250</a></li>
+                    <li auto-active class="col-xs-3" class="active"><a href="#!/home_page">首页</a></li>
+                    <li auto-active class="col-xs-3"><a href="#!/in_theaters">正在热映</a></li>
+                    <li auto-active class="col-xs-3"><a href="#!/coming_soon">即将上映</a></li>
+                    <li auto-active class="col-xs-3"><a href="#!/top250">Top250</a></li>
                 </ul>
             </nav>
+            <div class="copyright">
+                Copyright © 2010-2020 nicoxia All Rights Reserved
+            </div>
         </div>
     </div>
-    <script src="./scrollChangeColor.js"></script>
+    <!--<script src="./scrollChangeColor.js"></script>-->
     <script src="assets/js/prefixfree.min.js"></script>
     <script src="./angular.js"></script>
     <script src="./angular-route.js"></script>
@@ -53,7 +56,7 @@
     <script src="home_page/module.js"></script>
     <script src="./movie_list/module.js"></script>
     <script src="./coming_soon/module.js"></script>
-
+    <script src="./auto-active/autoactive.js"></script>
 
     <script src="./jquery.min.js"></script>
     <script src="./bootstrap.js"></script>

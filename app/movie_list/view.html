@@ -1,4 +1,4 @@
-<div class="list" style="margin-bottom:50px;">
+<div class="list">
     <!--底部高度有50px，否则会被底部tab顶掉-->
     <h2 style="color:skyblue;text-align:center">{{data.title}}</h2>
     <ul>
@@ -17,10 +17,12 @@
         <div class="loader"></div>
     </div>
     <!--loading 动画-->
-    <div ng-cloak class="paging">
-        <label>总共：{{data.total}}条记录,第{{nowPage}}/{{totalPage}}页;</label>
+    <div class="paging ng-cloak">
+        <label class="ng-cloak">总共：{{data.total}}条记录,第{{nowPage}}/{{totalPage}}页;</label>
         <!-- 加上disable类样式，表示按钮禁用状态 -->
-        <button ng-class="{'disabled':nowPage<=1}" class="prev disable " ng-click="goPage(nowPage-1)">上一页</button>
-        <button ng-class="{'disabled':nowPage>=totalPage}" class="next" ng-click="goPage(nowPage+1)">下一页</button>
+        <br class="hr">
+        <!--小屏幕小显示换行-->
+        <button class="btn" ng-class="{'disabled':nowPage<=1}" class="prev disable " ng-click="goPage(nowPage-1)">上一页</button>
+        <button class="btn" ng-class="{'disabled':nowPage>=totalPage}" class="next" ng-click="goPage(nowPage+1)">下一页</button>
     </div>
 </div>

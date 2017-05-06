@@ -1,10 +1,14 @@
 /*底部tab栏*/
 
+body {
+    padding: 60px 0;
+}
+
 header {
     height: 50px;
     width: 100%;
     padding-top: 10px;
-    background: rgba(135, 206, 235, .8);
+    background: rgba(34, 34, 34, .8);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +19,7 @@ header {
 header a.title {
     padding-top: 5px;
     font-size: 16px;
-    color: blue;
+    color: #bbb;
 }
 
 header .search .my-input {
@@ -35,31 +39,7 @@ header .search button {
 }
 
 
-/*底部*/
-
-nav {
-    width: 100%;
-}
-
-nav.tab {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-}
-
-nav.tab li {
-    background: #ccc;
-}
-
-nav.tab li a {
-    display: inline-block;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
-    cursor: pointer;
-}
+/*视图模块*/
 
 
 /*首页图片设置*/
@@ -69,13 +49,31 @@ nav.tab li a {
     height: 100%;
 }
 
+
+/*其他页面视图模块*/
+
+div[ng-view] .list>ul {
+    overflow: hidden;
+    /* 清除浮动影响*/
+}
+
+div[ng-view] .list>ul li {
+    margin-top: 10px;
+    text-align: center;
+}
+
+div[ng-view] h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 .list ul li a {
     display: block;
     width: 100%;
 }
 
 .list ul li img {
-    width: 320px;
+    /*width: 320px;*/
     height: 420px;
     box-shadow: 6px 6px 3px silver;
 }
@@ -85,31 +83,23 @@ nav.tab li a {
     transform: translateY(-6px)
 }
 
-div[ng-view] {
-    margin-top: 60px;
-}
-
-div[ng-view] .list>ul {
-    overflow: hidden;
-    /* 清除浮动影响*/
-}
-
-div[ng-view] .list>ul li {
-    margin-top: 10px;
-}
-
 
 /*页面模块*/
 
 .paging {
     border-top: 1px solid silver;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+    font-size: 12px;
 }
 
 .paging button.disabled {
     background: silver;
     cursor: unset;
+}
+
+.paging .hr {
+    display: none;
 }
 
 .paging button {
@@ -118,8 +108,15 @@ div[ng-view] .list>ul li {
     color: white;
 }
 
+.ng-cloak {
+    display: none;
+}
+
 
 /*设置小屏幕电影list居中*/
+
+
+/*媒体查询*/
 
 @media screen and (max-width: 768px) {
     .list img.home_img {
@@ -133,6 +130,9 @@ div[ng-view] .list>ul li {
         width: 300px;
         height: 400px;
     }
+    .paging .hr {
+        display: block;
+    }
 }
 
 div[ng-view] .otherinfo span {
@@ -143,12 +143,48 @@ div[ng-view] .otherinfo span {
 
 /*底部tab栏  */
 
+nav {
+    width: 100%;
+}
+
 nav.tab li {
     border-right: 1px solid #f2f0f9;
+    padding: 0;
 }
 
 nav.tab li:last-child {
     border-right: none;
+}
+
+nav.tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+nav.tab li {
+    background: #222;
+}
+
+nav.tab li a {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+
+/*底部copyright*/
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
 }
 
 
