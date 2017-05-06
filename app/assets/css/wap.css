@@ -274,3 +274,25 @@ nav.tab li a {
         transform: rotate(360deg);
     }
 }
+
+
+/*详情页样式*/
+
+.detail {
+    text-align: center;
+}
+
+.detail .dti-w {
+    margin-top: 10px;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.detail>p {
+    padding: 10px;
+    text-align: left;
+    color: slateblue !important;
+}
+
+
+/*详情页样式*/
