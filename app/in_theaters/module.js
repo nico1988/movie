@@ -19,7 +19,7 @@
         // $http.jsonp("http://api.douban.com/v2/movie/in_theaters?callback=JSON_CALLBACK").success(function(data) {
         //     console.log(data);　　 // 数据
         // });
-        MyJsonp.jsonp("http://api.douban.com/v2/movie/in_theaters", { start: 0, count: 10 }, function(data) {
+        MyJsonp.jsonp("https://api.douban.com/v2/movie/in_theaters", { start: 0, count: 10 }, function(data) {
             $scope.data = data; //暴露数据到全局作用域
             $scope.$apply(); // 强制刷新整个viewmodel，视图发生变化时
         })

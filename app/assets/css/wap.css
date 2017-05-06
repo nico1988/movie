@@ -1,5 +1,33 @@
 /*底部tab栏*/
 
+header {
+    height: 50px;
+    padding-top: 10px;
+    background: skyblue
+}
+
+header a.title {
+    padding-top: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+header .search .my-input {
+    height: 30px;
+    width: 90%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+header .search button {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+}
+
 nav {
     width: 100%;
 }
