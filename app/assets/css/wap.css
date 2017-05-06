@@ -15,7 +15,7 @@ header {
 header a.title {
     padding-top: 5px;
     font-size: 16px;
-    color: white;
+    color: blue;
 }
 
 header .search .my-input {
@@ -73,7 +73,7 @@ nav.tab li a {
 .list ul li img {
     width: 320px;
     height: 420px;
-    box-shadow: -3px -3px 3px silver, 6px 6px 3px silver;
+    box-shadow: 6px 6px 3px silver;
 }
 
 .list ul li img:hover {
@@ -95,19 +95,27 @@ div[ng-view] .list>ul li {
 }
 
 
-/*设置总页数*/
+/*页面模块*/
 
 .paging {
     border-top: 1px solid silver;
     padding: 10px;
+    text-align: center;
+}
+
+.paging button.disabled {
+    background: silver;
+    cursor: unset;
+}
+
+.paging button {
+    background: #6057ec;
+    border-radius: 6px;
+    color: white;
 }
 
 
 /*设置小屏幕电影list居中*/
-
-.paging {
-    text-align: center;
-}
 
 @media screen and (max-width: 768px) {
     .list img.home_img {
@@ -126,4 +134,15 @@ div[ng-view] .list>ul li {
 div[ng-view] .otherinfo span {
     margin-right: 4px;
     background: silver;
+}
+
+
+/*底部tab栏  */
+
+nav.tab li {
+    border-right: 1px solid #f2f0f9;
+}
+
+nav.tab li:last-child {
+    border-right: none;
 }

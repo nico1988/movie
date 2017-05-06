@@ -12,7 +12,7 @@
     // .bottom .menu{
 
     // }
-    var app = angular.module('moviecat', ['moviecat.myjsonp', 'moviecat.home_page', 'moviecat.in_theaters', "moviecat.coming_soon"]);
+    var app = angular.module('moviecat', ['moviecat.myjsonp', 'moviecat.home_page', 'moviecat.movie_list', "moviecat.coming_soon"]);
     app.config(["$routeProvider", function($routeProvider) {
         // $routeProvider.otherwise({ redirectTo: 'home_page' }) //注意：路径是从主模块所在路径开始计算的
     }])
